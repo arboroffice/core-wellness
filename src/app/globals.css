@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .gold-gradient {
+    background: linear-gradient(135deg, #C5A572 0%, #E8DCC8 50%, #C5A572 100%);
+  }
+  .gold-text {
+    @apply text-gold;
+  }
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-32;
+  }
+  .gold-divider {
+    @apply w-16 h-[1px] bg-gold mx-auto my-8;
+  }
+  .card-glass {
+    @apply bg-white/70 backdrop-blur-sm border border-gold-light/30 rounded-sm;
+  }
+  .btn-primary {
+    @apply inline-block px-8 py-3.5 bg-gold text-white font-sans text-sm tracking-[0.15em] uppercase hover:bg-gold-dark transition-all duration-300;
+  }
+  .btn-outline {
+    @apply inline-block px-8 py-3.5 border border-gold text-gold font-sans text-sm tracking-[0.15em] uppercase hover:bg-gold hover:text-white transition-all duration-300;
+  }
+}
+
+/* Smooth fade-in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
