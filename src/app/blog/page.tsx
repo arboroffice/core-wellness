@@ -4,33 +4,33 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Journal",
-  description: "Insights, research, and wellness wisdom from Core Wellness.",
+  description: "Research insights, compound education, and updates from Core Wellness.",
 };
 
 const posts = [
   {
     slug: "what-is-glp-3",
-    title: "What Is GLP-3? Everything You Need to Know",
+    title: "What Is GLP-3? A Research Overview",
     excerpt:
-      "An in-depth exploration of GLP-3 peptides — what they are, how they work, and why they represent the future of wellness optimization.",
+      "An overview of GLP-3 peptides — their structure, known biological roles, and why they are a growing focus of scientific investigation.",
     date: "January 15, 2025",
     category: "Education",
   },
   {
-    slug: "peptides-for-weight-loss",
-    title: "Peptides for Weight Loss: A Complete Guide",
+    slug: "peptides-in-research",
+    title: "Peptides in Modern Research: A Complete Guide",
     excerpt:
-      "Understanding how peptide therapy supports healthy body composition — the science, the process, and what to expect on your journey.",
+      "Understanding the role of synthetic peptides in laboratory research — from metabolic studies to cellular signaling investigations.",
     date: "January 8, 2025",
-    category: "Wellness",
+    category: "Research",
   },
   {
-    slug: "science-behind-core-wellness",
-    title: "The Science Behind Core Wellness",
+    slug: "quality-standards",
+    title: "The Quality Standards Behind Core Wellness",
     excerpt:
-      "From pharmaceutical-grade formulation to personalized protocols — how Core Wellness bridges cutting-edge science and luxury wellness.",
+      "How we ensure pharmaceutical-grade purity, from cGMP synthesis to independent third-party testing and full COA documentation.",
     date: "January 1, 2025",
-    category: "Brand",
+    category: "Quality",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function BlogPage() {
     <>
       <Hero
         title="The Journal"
-        subtitle="Insights, research, and reflections on modern wellness."
+        subtitle="Research insights, compound education, and industry updates."
       />
 
       <section className="section-padding bg-white">

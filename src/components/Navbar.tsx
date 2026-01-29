@@ -52,7 +52,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link href="/contact" className="btn-primary text-xs">
-              Begin Your Journey
+              Inquire Now
             </Link>
           </div>
 
@@ -100,7 +100,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="btn-primary text-center text-xs mt-4"
             >
-              Begin Your Journey
+              Inquire Now
             </Link>
           </div>
         </div>

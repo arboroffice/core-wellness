@@ -44,7 +44,22 @@ export default function ContactForm() {
       ))}
       <div>
         <label className="block text-xs tracking-[0.15em] uppercase text-charcoal/60 mb-2">
-          How Can We Help?
+          Product Interest
+        </label>
+        <select
+          name="product"
+          className="w-full px-4 py-3 bg-white border border-gold-light/40 focus:border-gold outline-none transition-colors text-sm text-charcoal/70"
+        >
+          <option value="">Select a product</option>
+          <option value="glp-3">GLP-3 10mg/ml</option>
+          <option value="glp-2">GLP-2 10mg/ml</option>
+          <option value="lipo">Lipo in a Bottle</option>
+          <option value="other">Other / General Inquiry</option>
+        </select>
+      </div>
+      <div>
+        <label className="block text-xs tracking-[0.15em] uppercase text-charcoal/60 mb-2">
+          Message
         </label>
         <textarea
           name="message"
@@ -52,8 +67,20 @@ export default function ContactForm() {
           className="w-full px-4 py-3 bg-white border border-gold-light/40 focus:border-gold outline-none transition-colors text-sm resize-none"
         />
       </div>
+      <div className="flex items-start gap-3">
+        <input
+          type="checkbox"
+          id="age-confirm"
+          required
+          className="mt-1 accent-gold"
+        />
+        <label htmlFor="age-confirm" className="text-xs text-charcoal/50 leading-relaxed">
+          I confirm I am 18+ years of age and understand all products are sold
+          for research purposes only, not for human consumption.
+        </label>
+      </div>
       <button type="submit" className="btn-primary w-full text-center">
-        Schedule Consultation
+        Submit Inquiry
       </button>
     </form>
   );

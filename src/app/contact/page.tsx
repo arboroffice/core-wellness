@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Begin your wellness journey. Schedule a consultation with Core Wellness.",
+    "Inquire about Core Wellness research compounds. Get specifications, availability, and COA documentation.",
 };
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       <Hero
         title="Get in Touch"
-        subtitle="Your journey begins with a conversation. We're here to guide you."
+        subtitle="Our team is here to assist with product inquiries, specifications, and availability."
       />
 
       <section className="section-padding bg-white">
@@ -21,15 +21,16 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-                Schedule a Consultation
+                Inquiries
               </p>
               <h2 className="font-serif text-3xl font-light">
-                Let&apos;s Start Your Journey
+                How Can We Help?
               </h2>
               <div className="w-16 h-[1px] bg-gold my-6" />
               <p className="text-charcoal/60 leading-relaxed mb-8">
-                Fill out the form and one of our wellness specialists will reach
-                out within 24 hours to schedule your complimentary consultation.
+                Whether you need product specifications, certificates of
+                analysis, or want to discuss availability — our team responds
+                within 24 hours.
               </p>
 
               <div className="space-y-6">
@@ -46,6 +47,11 @@ export default function ContactPage() {
                   </div>
                 ))}
               </div>
+
+              <p className="text-xs text-charcoal/40 mt-8 leading-relaxed">
+                All products are sold for research purposes only. Not for human
+                consumption. Must be 18+ to purchase.
+              </p>
             </div>
 
             <div className="card-glass p-8 lg:p-12">

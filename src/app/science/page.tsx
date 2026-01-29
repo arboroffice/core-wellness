@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Science",
   description:
-    "Understanding GLP peptides — the science behind Core Wellness peptide therapy.",
+    "Understanding GLP peptides and lipotropic compounds — the science behind Core Wellness research products.",
 };
 
 export default function SciencePage() {
@@ -13,7 +13,7 @@ export default function SciencePage() {
     <>
       <Hero
         title="The Science"
-        subtitle="Rigorous research. Pharmaceutical precision. Proven mechanisms."
+        subtitle="Rigorous research. Pharmaceutical precision. Documented purity."
       />
 
       <section className="section-padding bg-white">
@@ -27,22 +27,24 @@ export default function SciencePage() {
           <div className="w-16 h-[1px] bg-gold my-6" />
           <div className="space-y-6 text-charcoal/60 leading-relaxed">
             <p>
-              Glucagon-like peptides (GLPs) are naturally occurring hormones that
-              play a crucial role in metabolic regulation. These signaling
-              molecules communicate with your body&apos;s systems to support
-              healthy metabolic function, appetite regulation, and cellular
-              wellness.
+              Glucagon-like peptides (GLPs) are a family of endogenous hormones
+              that have attracted significant scientific interest for their roles
+              in metabolic regulation, gastrointestinal physiology, and cellular
+              signaling. They continue to be a major focus of academic and
+              laboratory research worldwide.
             </p>
             <p>
-              GLP-3 represents the next evolution in peptide science.
-              Pharmaceutical-grade GLP-3 peptides work with your body&apos;s
-              natural pathways to optimize metabolic function, supporting your
-              wellness goals through precise, science-backed mechanisms.
+              GLP-2 is recognized in the research community for its role in
+              intestinal mucosal biology, nutrient absorption pathways, and gut
+              barrier function. GLP-3 represents an emerging area of
+              investigation, with researchers exploring its potential
+              interactions with metabolic and cellular pathways.
             </p>
             <p>
-              At Core Wellness, our formulations are synthesized to the highest
-              pharmaceutical standards, ensuring purity, potency, and
-              consistency in every vial.
+              At Core Wellness, our research-grade compounds are synthesized to
+              the highest pharmaceutical standards, enabling researchers to work
+              with verified, high-purity materials essential for reliable
+              scientific results.
             </p>
           </div>
         </div>
@@ -52,29 +54,29 @@ export default function SciencePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-              Mechanisms
+              Areas of Study
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-light">
-              How It Works in Your Body
+              Research Applications
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "Metabolic Optimization",
-                desc: "GLP-3 peptides interact with metabolic receptors to support healthy glucose metabolism and energy utilization, promoting efficient metabolic function.",
+                title: "Metabolic Pathway Research",
+                desc: "GLP peptides are studied for their interactions with metabolic receptors and their role in glucose homeostasis, energy metabolism, and related signaling cascades.",
               },
               {
-                title: "Appetite Regulation",
-                desc: "By working with your body's natural satiety signals, GLP-3 supports healthy appetite patterns without the crash associated with restrictive approaches.",
+                title: "Gastrointestinal Biology",
+                desc: "GLP-2 in particular is a subject of active research into intestinal mucosal growth, gut barrier integrity, and nutrient absorption mechanisms.",
               },
               {
-                title: "Cellular Wellness",
-                desc: "Emerging research suggests GLP peptides may support cellular health and regeneration, contributing to overall vitality and wellness longevity.",
+                title: "Lipotropic Compound Studies",
+                desc: "Lipotropic agents are investigated for their roles in lipid metabolism, hepatic function, and fat mobilization pathways in controlled laboratory settings.",
               },
               {
-                title: "Body Composition",
-                desc: "Clinical observations indicate that GLP-3 therapy, combined with lifestyle optimization, can support healthy body composition changes over time.",
+                title: "Cellular Signaling",
+                desc: "Researchers utilize GLP peptides to study receptor binding, downstream signaling, and the broader implications of peptide-mediated cellular communication.",
               },
             ].map((item) => (
               <div key={item.title} className="card-glass p-8">
@@ -91,7 +93,7 @@ export default function SciencePage() {
       <section className="section-padding bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-            Research & Quality
+            Quality Assurance
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-light">
             Our Standards
@@ -100,16 +102,16 @@ export default function SciencePage() {
           <div className="space-y-8">
             {[
               {
-                title: "Pharmaceutical-Grade Purity",
-                desc: "Every batch is synthesized in cGMP-compliant facilities and undergoes rigorous third-party testing for purity, potency, and sterility.",
+                title: "Pharmaceutical-Grade Synthesis",
+                desc: "Every compound is synthesized in cGMP-compliant facilities, ensuring consistency, purity, and reliability across all batches.",
               },
               {
-                title: "Clinical Research Foundation",
-                desc: "Our formulations are informed by peer-reviewed research on GLP peptides, ensuring our protocols reflect the latest scientific understanding.",
+                title: "Independent Verification",
+                desc: "All products undergo rigorous third-party testing including HPLC purity analysis, mass spectrometry identification, endotoxin testing, and sterility verification.",
               },
               {
-                title: "Medical Oversight",
-                desc: "All protocols are designed and supervised by licensed healthcare providers with expertise in peptide therapy and metabolic wellness.",
+                title: "Full Documentation",
+                desc: "Every order ships with a comprehensive Certificate of Analysis (COA), providing researchers with the analytical data needed for confident, reproducible work.",
               },
             ].map((item) => (
               <div
@@ -126,18 +128,28 @@ export default function SciencePage() {
         </div>
       </section>
 
+      <section className="py-12 bg-cream">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <p className="text-xs text-charcoal/40 leading-relaxed">
+            All products are sold strictly for research purposes only. Not for
+            human consumption. The information on this page is for educational
+            and informational purposes and does not constitute medical advice.
+          </p>
+        </div>
+      </section>
+
       <section className="section-padding bg-charcoal text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-light text-white">
-            Science You Can Trust
+            Need Specifications?
           </h2>
           <p className="mt-4 text-white/50">
-            Have questions about our research or formulations? Our team is here
-            to help.
+            Our team can provide detailed COAs, batch data, and compound
+            specifications for your research.
           </p>
           <div className="mt-8">
             <Link href="/contact" className="btn-primary">
-              Ask Our Specialists
+              Request Documentation
             </Link>
           </div>
         </div>

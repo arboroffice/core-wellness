@@ -4,39 +4,39 @@ import ProductCard from "@/components/ProductCard";
 const steps = [
   {
     num: "01",
-    title: "Consult",
-    desc: "Begin with a confidential consultation with our wellness specialists.",
+    title: "Explore",
+    desc: "Browse our curated catalog of premium research-grade peptides and compounds.",
   },
   {
     num: "02",
-    title: "Customize",
-    desc: "Receive a personalized protocol tailored to your unique biology.",
+    title: "Inquire",
+    desc: "Connect with our team to discuss specifications, purity documentation, and availability.",
   },
   {
     num: "03",
-    title: "Transform",
-    desc: "Experience the difference with pharmaceutical-grade peptide therapy.",
+    title: "Receive",
+    desc: "Your order is prepared with pharmaceutical-grade precision and shipped with care.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Core Wellness changed my relationship with my body. The results speak for themselves.",
-    name: "Sarah M.",
-    title: "Verified Client",
+      "The purity and consistency of Core Wellness compounds is unmatched. Our lab has relied on them exclusively.",
+    name: "Dr. S. Mitchell",
+    title: "Research Director",
   },
   {
     quote:
-      "Finally, a wellness brand that treats me like a person, not a patient. Exceptional quality.",
+      "Finally, a supplier that treats research compounds with the quality standards they deserve. Exceptional.",
     name: "James R.",
-    title: "Verified Client",
+    title: "Verified Researcher",
   },
   {
     quote:
-      "The attention to detail — from consultation to delivery — is unlike anything I've experienced.",
-    name: "Olivia K.",
-    title: "Verified Client",
+      "The attention to detail — from COA documentation to packaging — is unlike anything I've experienced.",
+    name: "Dr. O. Kim",
+    title: "Laboratory Associate",
   },
 ];
 
@@ -50,20 +50,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <p className="text-xs tracking-[0.3em] uppercase text-gold mb-6">
-            Luxury Peptide Wellness
+            Premium Research Peptides
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-tight leading-[1.1]">
             Redefine Your
             <br />
-            <em className="italic">Wellness</em>
+            <em className="italic">Research</em>
           </h1>
           <p className="mt-8 text-base md:text-lg text-charcoal/60 font-light leading-relaxed max-w-lg mx-auto">
-            Premium GLP-3 peptide therapy, crafted for those who demand
-            excellence in every aspect of their wellbeing.
+            Premium research-grade peptides and compounds, crafted with
+            pharmaceutical precision for those who demand excellence.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products" className="btn-primary">
-              Explore Products
+              Explore Compounds
             </Link>
             <Link href="/how-it-works" className="btn-outline">
               How It Works
@@ -83,10 +83,10 @@ export default function Home() {
           </h2>
           <div className="gold-divider" />
           <p className="text-charcoal/60 leading-relaxed max-w-2xl mx-auto">
-            Core Wellness brings pharmaceutical-grade GLP-3 peptides to the
-            modern wellness experience. Our formulations are designed with
-            precision, delivered with care, and crafted for those who understand
-            that true wellness is an investment in yourself.
+            Core Wellness delivers research-grade peptides and compounds with
+            uncompromising purity. Every product is third-party tested,
+            accompanied by full certificates of analysis, and crafted for
+            researchers who accept nothing less than the best.
           </p>
         </div>
       </section>
@@ -99,31 +99,35 @@ export default function Home() {
               Our Collection
             </p>
             <h2 className="font-serif text-3xl md:text-5xl font-light">
-              Curated For You
+              Research Compounds
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ProductCard
-              name="GLP-3 5mg/ml"
-              subtitle="Signature Formula"
-              price="Contact for Pricing"
+              name="GLP-3"
+              subtitle="10mg/ml · Injectable"
+              price="Inquire for Availability"
               href="/products/glp-3"
               image="/images/vial-single.jpg"
             />
             <ProductCard
-              name="GLP-3 Starter Kit"
-              subtitle="Complete Wellness Set"
-              price="Contact for Pricing"
-              href="/products/glp-3"
+              name="GLP-2"
+              subtitle="10mg/ml · Injectable"
+              price="Inquire for Availability"
+              href="/products/glp-2"
               image="/images/packaging-flatlay.jpg"
             />
             <ProductCard
-              name="Premium Protocol"
-              subtitle="3-Month Program"
-              price="By Consultation"
-              href="/contact"
+              name="Lipo in a Bottle"
+              subtitle="Injectable Compound"
+              price="Inquire for Availability"
+              href="/products/lipo-in-a-bottle"
             />
           </div>
+          <p className="text-center text-xs text-charcoal/40 mt-8 tracking-wide">
+            All products are sold strictly for research purposes only. Not for
+            human consumption.
+          </p>
         </div>
       </section>
 
@@ -132,7 +136,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-              Your Journey
+              The Process
             </p>
             <h2 className="font-serif text-3xl md:text-5xl font-light">
               Three Simple Steps
@@ -163,7 +167,7 @@ export default function Home() {
               Testimonials
             </p>
             <h2 className="font-serif text-3xl md:text-5xl font-light">
-              What Our Clients Say
+              Trusted by Researchers
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -208,15 +212,15 @@ export default function Home() {
             Ready?
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-light text-white">
-            Begin Your Journey
+            Elevate Your Research
           </h2>
           <p className="mt-6 text-white/50 leading-relaxed">
-            Take the first step toward optimized wellness. Our team is ready to
-            craft your personalized protocol.
+            Explore our catalog of premium research-grade compounds. Our team is
+            ready to assist with specifications and availability.
           </p>
           <div className="mt-10">
             <Link href="/contact" className="btn-primary">
-              Schedule Consultation
+              Contact Our Team
             </Link>
           </div>
         </div>

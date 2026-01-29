@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Core Wellness — where science meets luxury in peptide wellness.",
+    "The story behind Core Wellness — premium research-grade peptides and compounds.",
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
     <>
       <Hero
         title="Our Story"
-        subtitle="Born from a belief that wellness should be as refined as the science behind it."
+        subtitle="Born from a belief that research-grade compounds deserve an elevated standard."
       />
 
       <section className="section-padding bg-white">
@@ -24,24 +24,24 @@ export default function AboutPage() {
                 Our Philosophy
               </p>
               <h2 className="font-serif text-3xl md:text-4xl font-light">
-                Science Meets Luxury
+                Precision Meets Excellence
               </h2>
               <div className="w-16 h-[1px] bg-gold my-6" />
               <p className="text-charcoal/60 leading-relaxed mb-4">
-                Core Wellness was founded on a simple premise: the most advanced
-                wellness solutions deserve the most elevated experience.
+                Core Wellness was founded on a simple premise: research-grade
+                compounds should meet the highest standards of purity, quality,
+                and presentation.
               </p>
               <p className="text-charcoal/60 leading-relaxed mb-4">
-                We believe that optimizing your health shouldn&apos;t feel
-                clinical. It should feel intentional, luxurious, and deeply
-                personal. Every touchpoint — from your first consultation to the
-                moment you open your carefully packaged peptides — is designed
-                with care.
+                We believe the research community deserves suppliers who treat
+                every compound with pharmaceutical precision — from synthesis and
+                testing to documentation and delivery. Every touchpoint reflects
+                our commitment to excellence.
               </p>
               <p className="text-charcoal/60 leading-relaxed">
-                Our pharmaceutical-grade GLP-3 peptides represent the pinnacle
-                of modern wellness science, delivered with the elegance you
-                deserve.
+                Our catalog features premium peptides and compounds, each
+                third-party tested and accompanied by comprehensive certificates
+                of analysis. This is research supply, elevated.
               </p>
             </div>
             <div className="aspect-[3/4] bg-cream-dark flex items-center justify-center">
@@ -54,25 +54,25 @@ export default function AboutPage() {
       <section className="section-padding bg-cream">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-            Our Mission
+            Our Standards
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-light">
-            Elevating Every Journey
+            What Sets Us Apart
           </h2>
           <div className="gold-divider" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[
               {
                 title: "Purity",
-                desc: "Every batch is tested to pharmaceutical standards. No compromises.",
+                desc: "Every batch is synthesized to ≥98% purity and verified through independent HPLC analysis.",
               },
               {
-                title: "Precision",
-                desc: "Personalized protocols designed for your unique biology and goals.",
+                title: "Documentation",
+                desc: "Full certificates of analysis included with every order. Transparent, verifiable quality.",
               },
               {
-                title: "Privacy",
-                desc: "Discreet, secure, and confidential — from consultation to delivery.",
+                title: "Integrity",
+                desc: "Cold-chain shipping, sterile packaging, and meticulous handling from lab to delivery.",
               },
             ].map((v) => (
               <div key={v.title} className="card-glass p-8">
@@ -86,7 +86,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
@@ -105,9 +104,9 @@ export default function AboutPage() {
               Founder & CEO
             </p>
             <p className="text-sm text-charcoal/60 mt-4 leading-relaxed">
-              Driven by a passion for accessible, elevated wellness, Mia founded
-              Core Wellness to bridge the gap between cutting-edge peptide
-              science and the luxury experience modern clients expect.
+              Driven by a commitment to quality and transparency, Mia founded
+              Core Wellness to bring pharmaceutical-grade precision to the
+              research compound market — with an aesthetic standard to match.
             </p>
           </div>
         </div>
@@ -120,7 +119,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8">
             <Link href="/contact" className="btn-primary">
-              Begin Your Journey
+              Contact Our Team
             </Link>
           </div>
         </div>

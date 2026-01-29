@@ -6,42 +6,42 @@ const articles: Record<
   { title: string; date: string; category: string; content: string[] }
 > = {
   "what-is-glp-3": {
-    title: "What Is GLP-3? Everything You Need to Know",
+    title: "What Is GLP-3? A Research Overview",
     date: "January 15, 2025",
     category: "Education",
     content: [
-      "Glucagon-like peptide-3, or GLP-3, represents a significant advancement in peptide wellness science. As a naturally occurring hormone in the body, GLP-3 plays a vital role in metabolic regulation, gut health, and overall cellular function.",
-      "Unlike earlier generations of GLP peptides, GLP-3 offers a more targeted approach to metabolic optimization. Its unique receptor profile allows for precise interaction with the body's signaling pathways, supporting healthy metabolic function without the side effects commonly associated with less refined approaches.",
-      "At Core Wellness, our GLP-3 formulation is synthesized to pharmaceutical-grade standards. Each vial undergoes rigorous third-party testing to ensure purity, potency, and sterility — because when it comes to your wellness, there is no room for compromise.",
-      "The mechanism of action is elegant in its simplicity: GLP-3 works with your body's existing pathways to optimize metabolic function, support healthy appetite regulation, and promote cellular wellness. It's not about overriding your biology — it's about enhancing it.",
-      "For those considering GLP-3 therapy, the journey begins with a comprehensive consultation. Our medical team evaluates your health profile, lifestyle, and goals to create a personalized protocol that aligns with your unique biology.",
-      "The future of wellness isn't one-size-fits-all. It's precise. It's personalized. It's Core Wellness.",
+      "Glucagon-like peptide-3, or GLP-3, is an area of growing scientific interest within the peptide research community. As part of the broader GLP peptide family, it shares structural and functional characteristics with GLP-1 and GLP-2, while presenting unique properties worthy of dedicated investigation.",
+      "The GLP family of peptides has been extensively studied for their roles in metabolic regulation, gastrointestinal biology, and cellular signaling. GLP-3 in particular has attracted attention from researchers exploring novel metabolic pathways and receptor interactions.",
+      "In laboratory settings, GLP-3 is utilized to study receptor binding characteristics, downstream signaling cascades, and interactions with related peptide systems. Its structural profile offers researchers a valuable tool for comparative studies within the glucagon-like peptide family.",
+      "Core Wellness provides research-grade GLP-3 at 10mg/ml concentration, synthesized to ≥98% purity with full HPLC verification. This level of quality is essential for producing reliable, reproducible research results.",
+      "For researchers interested in incorporating GLP-3 into their studies, we recommend reviewing the available literature on GLP family peptides and consulting with our team regarding compound specifications and certificates of analysis.",
+      "As with all Core Wellness products, our GLP-3 is intended strictly for research purposes and is accompanied by comprehensive analytical documentation.",
     ],
   },
-  "peptides-for-weight-loss": {
-    title: "Peptides for Weight Loss: A Complete Guide",
+  "peptides-in-research": {
+    title: "Peptides in Modern Research: A Complete Guide",
     date: "January 8, 2025",
-    category: "Wellness",
+    category: "Research",
     content: [
-      "The conversation around weight management has evolved significantly in recent years. No longer limited to calorie counting and exercise alone, modern wellness embraces a more holistic, science-driven approach — and peptide therapy is at the forefront of this evolution.",
-      "Peptides are short chains of amino acids that serve as signaling molecules in the body. When it comes to body composition, certain peptides can support metabolic function, appetite regulation, and fat metabolism through precise biological mechanisms.",
-      "GLP peptides, in particular, have garnered significant attention for their role in metabolic optimization. By interacting with specific receptors, these peptides can support the body's natural processes for maintaining healthy body composition.",
-      "It's important to understand that peptide therapy is not a shortcut — it's a sophisticated tool that works best as part of a comprehensive wellness strategy. At Core Wellness, we pair our pharmaceutical-grade peptides with personalized guidance on nutrition, movement, and lifestyle optimization.",
-      "The key difference with a luxury wellness approach? Personalization. Your protocol is designed for your biology, your goals, and your lifestyle. No generic programs. No guesswork.",
-      "If you're exploring peptide therapy for body composition support, the first step is a consultation with a qualified wellness specialist who can evaluate whether this approach aligns with your health profile and goals.",
+      "Synthetic peptides have become indispensable tools in modern scientific research. From drug discovery and pharmacology to cell biology and biochemistry, researchers rely on high-purity peptide compounds to investigate fundamental biological processes.",
+      "Peptides — short chains of amino acids — serve as signaling molecules, enzyme substrates, and receptor ligands in countless biological systems. Their specificity and versatility make them ideal subjects for laboratory investigation across multiple disciplines.",
+      "In metabolic research, GLP peptides have been particularly significant. GLP-1 and GLP-2 are well-characterized in the literature, while newer compounds like GLP-3 represent expanding frontiers of peptide science with novel research applications.",
+      "Lipotropic compounds represent another active area of investigation. Researchers study these agents for their roles in lipid metabolism, hepatic function, and fat mobilization pathways — contributing to our broader understanding of metabolic biochemistry.",
+      "The quality of research-grade peptides directly impacts experimental outcomes. Impurities, degradation, or inconsistent concentrations can introduce variability and compromise results. This is why pharmaceutical-grade purity, verified by independent testing, is essential.",
+      "Core Wellness is committed to supporting the research community with compounds that meet the highest standards of purity and documentation, enabling scientists to focus on discovery rather than quality concerns.",
     ],
   },
-  "science-behind-core-wellness": {
-    title: "The Science Behind Core Wellness",
+  "quality-standards": {
+    title: "The Quality Standards Behind Core Wellness",
     date: "January 1, 2025",
-    category: "Brand",
+    category: "Quality",
     content: [
-      "Core Wellness was born from a singular vision: that the most advanced wellness science deserves the most elevated experience. We believe that optimizing your health should never feel clinical or impersonal.",
-      "Our formulations begin with pharmaceutical-grade ingredients, synthesized in cGMP-compliant facilities that meet the highest standards of quality and safety. Every batch undergoes comprehensive third-party testing for purity, potency, endotoxins, and sterility.",
-      "But great science alone isn't enough. What sets Core Wellness apart is our approach to the entire wellness journey. From your first consultation to ongoing protocol optimization, every touchpoint is designed with intention and care.",
-      "Our medical advisory team includes licensed healthcare providers with deep expertise in peptide therapy, metabolic medicine, and integrative wellness. This ensures that every protocol we create is grounded in evidence and tailored to individual biology.",
-      "The result is a wellness experience that feels as refined as the science behind it. Premium packaging. Discreet delivery. Dedicated support. Because how you feel about your wellness journey matters as much as the outcomes.",
-      "This is the Core Wellness difference: where rigorous science meets uncompromising luxury. Welcome to a new standard of care.",
+      "At Core Wellness, quality is not a marketing claim — it is the foundation of everything we do. From synthesis to shipping, every step of our process is designed to deliver research-grade compounds that meet the most rigorous scientific standards.",
+      "Our compounds are synthesized in cGMP-compliant facilities that adhere to Current Good Manufacturing Practice regulations. This ensures consistency, traceability, and quality control at every stage of production.",
+      "Every batch undergoes comprehensive third-party testing. Our standard analytical panel includes HPLC purity analysis (≥98% threshold), mass spectrometry for identity confirmation, endotoxin testing, and sterility verification. Results are documented in a detailed Certificate of Analysis.",
+      "We believe in full transparency. Every COA is provided with your order, giving you access to the analytical data you need to confidently incorporate our compounds into your research. Additional batch data is available upon request.",
+      "Packaging and shipping are handled with the same precision. Temperature-sensitive compounds are shipped in cold-chain packaging with thermal monitoring. All orders are discreetly packaged and shipped via priority carriers.",
+      "This commitment to quality is what defines Core Wellness. We exist to serve the research community with compounds they can trust — verified, documented, and delivered with care.",
     ],
   },
 };
@@ -103,9 +103,9 @@ export default function BlogPostPage({
 
           <div className="border-t border-gold-light/30 mt-16 pt-8">
             <p className="text-xs text-charcoal/40 leading-relaxed italic">
-              Disclaimer: This article is for informational purposes only and
-              does not constitute medical advice. Consult a licensed healthcare
-              provider before starting any peptide therapy.
+              This article is for informational and educational purposes only.
+              All Core Wellness products are sold strictly for research purposes
+              only and are not intended for human consumption.
             </p>
           </div>
 

@@ -4,9 +4,9 @@ import Link from "next/link";
 import Accordion from "@/components/Accordion";
 
 const specs = [
-  "Concentration: 10mg/ml",
-  "Format: Injectable solution",
-  "Purity: ≥98% (HPLC verified)",
+  "Format: Injectable compound",
+  "Lipotropic research blend",
+  "Purity: Pharmaceutical-grade",
   "Third-party tested",
   "Certificate of Analysis included",
   "Sterile filtered",
@@ -14,60 +14,55 @@ const specs = [
 
 const faqItems = [
   {
-    question: "What is the purity of this compound?",
+    question: "What is Lipo in a Bottle?",
     answer:
-      "Our GLP-3 is synthesized to ≥98% purity, verified by HPLC analysis. Every batch is accompanied by a full Certificate of Analysis (COA) documenting purity, identity, and sterility testing results.",
+      "Lipo in a Bottle is a proprietary injectable research compound formulated with lipotropic agents. It is designed for scientific study of lipotropic mechanisms and fat metabolism pathways in controlled research settings.",
+  },
+  {
+    question: "What is the purity and quality standard?",
+    answer:
+      "Lipo in a Bottle is manufactured to pharmaceutical-grade standards with rigorous quality controls. Each batch undergoes third-party testing for purity, potency, and sterility. A full Certificate of Analysis is provided.",
   },
   {
     question: "How should this product be stored?",
     answer:
-      "Store unopened vials in a refrigerator at 2-8°C (36-46°F). Protect from light and avoid freezing. Once opened, maintain refrigeration and use within the timeframe specified on the COA.",
+      "Store in a refrigerator at 2-8°C (36-46°F). Protect from light and avoid freezing. Refer to the included documentation for specific storage guidelines.",
   },
   {
     question: "What documentation is provided?",
     answer:
-      "Each order includes a Certificate of Analysis (COA) with HPLC purity data, mass spectrometry confirmation, endotoxin testing, and sterility verification. Additional documentation available upon request.",
+      "Each order includes a Certificate of Analysis with complete analytical data. Additional compound specifications and research references available upon request.",
   },
   {
     question: "What is the intended use?",
     answer:
       "This product is sold strictly for research purposes only. It is intended for in-vitro research, educational, and scientific applications. Not for human consumption.",
   },
-  {
-    question: "How do I place an order?",
-    answer:
-      "Contact our team through the inquiry form or email. We'll confirm availability, provide current specifications, and process your research order. All purchasers must confirm they are 18+ and agree to research-use-only terms.",
-  },
 ];
 
-export default function GLP3Page() {
+export default function LipoPage() {
   return (
     <>
-      {/* Product Hero */}
       <section className="pt-28 pb-20 bg-cream">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="aspect-square bg-white flex items-center justify-center overflow-hidden">
-              <img
-                src="/images/vial-single.jpg"
-                alt="GLP-3 10mg/ml Research Peptide"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-square bg-white flex items-center justify-center">
+              <span className="font-serif text-8xl text-gold/20">CW</span>
             </div>
 
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-                Research Peptide
+                Research Compound
               </p>
               <h1 className="font-serif text-4xl md:text-5xl font-light">
-                GLP-3
+                Lipo in a Bottle
               </h1>
-              <p className="text-lg text-charcoal/50 mt-2">10mg/ml · Injectable</p>
+              <p className="text-lg text-charcoal/50 mt-2">Injectable Compound</p>
               <div className="w-16 h-[1px] bg-gold my-6" />
               <p className="text-charcoal/60 leading-relaxed mb-6">
-                Our flagship research-grade GLP-3 peptide, precision-dosed at
-                10mg/ml. Synthesized under strict quality controls with ≥98%
-                purity verified by independent HPLC analysis.
+                A proprietary lipotropic research compound formulated for
+                scientific investigation. Manufactured to pharmaceutical-grade
+                standards with comprehensive analytical documentation.
               </p>
 
               <div className="space-y-3 mb-8">
@@ -96,7 +91,6 @@ export default function GLP3Page() {
         </div>
       </section>
 
-      {/* Specifications */}
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -111,18 +105,18 @@ export default function GLP3Page() {
             {[
               {
                 label: "Compound",
-                value: "GLP-3 Peptide",
-                detail: "Glucagon-Like Peptide-3",
+                value: "Lipotropic Blend",
+                detail: "Proprietary research formulation",
               },
               {
-                label: "Concentration",
-                value: "10mg/ml",
-                detail: "Precision-dosed injectable solution",
+                label: "Format",
+                value: "Injectable",
+                detail: "Ready-to-use research solution",
               },
               {
-                label: "Purity",
-                value: "≥98%",
-                detail: "HPLC verified, third-party tested",
+                label: "Quality",
+                value: "Pharma-Grade",
+                detail: "Third-party tested & verified",
               },
             ].map((s) => (
               <div key={s.label} className="card-glass p-8 text-center">
@@ -137,7 +131,6 @@ export default function GLP3Page() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="section-padding bg-cream">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -152,7 +145,6 @@ export default function GLP3Page() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-padding bg-charcoal text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-light text-white">

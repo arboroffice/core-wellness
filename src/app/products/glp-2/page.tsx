@@ -14,43 +14,42 @@ const specs = [
 
 const faqItems = [
   {
+    question: "What is GLP-2?",
+    answer:
+      "GLP-2 (Glucagon-Like Peptide-2) is a research peptide of significant scientific interest for its role in intestinal biology and mucosal physiology. It has been the subject of extensive academic and laboratory research.",
+  },
+  {
     question: "What is the purity of this compound?",
     answer:
-      "Our GLP-3 is synthesized to ≥98% purity, verified by HPLC analysis. Every batch is accompanied by a full Certificate of Analysis (COA) documenting purity, identity, and sterility testing results.",
+      "Our GLP-2 is synthesized to ≥98% purity, verified by HPLC analysis. A full Certificate of Analysis (COA) is included with every order, documenting purity, identity, and sterility testing.",
   },
   {
     question: "How should this product be stored?",
     answer:
-      "Store unopened vials in a refrigerator at 2-8°C (36-46°F). Protect from light and avoid freezing. Once opened, maintain refrigeration and use within the timeframe specified on the COA.",
+      "Store unopened vials in a refrigerator at 2-8°C (36-46°F). Protect from light and avoid freezing. Refer to the COA for specific handling guidelines.",
   },
   {
     question: "What documentation is provided?",
     answer:
-      "Each order includes a Certificate of Analysis (COA) with HPLC purity data, mass spectrometry confirmation, endotoxin testing, and sterility verification. Additional documentation available upon request.",
+      "Each order includes a Certificate of Analysis with HPLC purity data, mass spectrometry confirmation, endotoxin testing, and sterility verification.",
   },
   {
     question: "What is the intended use?",
     answer:
       "This product is sold strictly for research purposes only. It is intended for in-vitro research, educational, and scientific applications. Not for human consumption.",
   },
-  {
-    question: "How do I place an order?",
-    answer:
-      "Contact our team through the inquiry form or email. We'll confirm availability, provide current specifications, and process your research order. All purchasers must confirm they are 18+ and agree to research-use-only terms.",
-  },
 ];
 
-export default function GLP3Page() {
+export default function GLP2Page() {
   return (
     <>
-      {/* Product Hero */}
       <section className="pt-28 pb-20 bg-cream">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-square bg-white flex items-center justify-center overflow-hidden">
               <img
-                src="/images/vial-single.jpg"
-                alt="GLP-3 10mg/ml Research Peptide"
+                src="/images/packaging-flatlay.jpg"
+                alt="GLP-2 10mg/ml Research Peptide"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -60,14 +59,14 @@ export default function GLP3Page() {
                 Research Peptide
               </p>
               <h1 className="font-serif text-4xl md:text-5xl font-light">
-                GLP-3
+                GLP-2
               </h1>
               <p className="text-lg text-charcoal/50 mt-2">10mg/ml · Injectable</p>
               <div className="w-16 h-[1px] bg-gold my-6" />
               <p className="text-charcoal/60 leading-relaxed mb-6">
-                Our flagship research-grade GLP-3 peptide, precision-dosed at
-                10mg/ml. Synthesized under strict quality controls with ≥98%
-                purity verified by independent HPLC analysis.
+                Research-grade GLP-2 peptide at 10mg/ml concentration. A
+                compound of significant scientific interest, synthesized to
+                pharmaceutical-grade purity with full analytical documentation.
               </p>
 
               <div className="space-y-3 mb-8">
@@ -96,7 +95,6 @@ export default function GLP3Page() {
         </div>
       </section>
 
-      {/* Specifications */}
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -111,8 +109,8 @@ export default function GLP3Page() {
             {[
               {
                 label: "Compound",
-                value: "GLP-3 Peptide",
-                detail: "Glucagon-Like Peptide-3",
+                value: "GLP-2 Peptide",
+                detail: "Glucagon-Like Peptide-2",
               },
               {
                 label: "Concentration",
@@ -137,7 +135,6 @@ export default function GLP3Page() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="section-padding bg-cream">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -152,7 +149,6 @@ export default function GLP3Page() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-padding bg-charcoal text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-light text-white">

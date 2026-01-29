@@ -5,33 +5,33 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "From consultation to transformation — discover the Core Wellness process.",
+    "From inquiry to delivery — discover how Core Wellness supplies premium research compounds.",
 };
 
 const steps = [
   {
     num: "01",
-    title: "Consultation",
-    desc: "Begin with a confidential consultation with our wellness specialists. We review your health history, goals, and lifestyle to determine the ideal approach.",
-    detail: "Virtual or in-person · 30 minutes · Complimentary",
+    title: "Inquire",
+    desc: "Browse our catalog and reach out to our team. We'll confirm product availability, provide current specifications, and answer any questions about our compounds.",
+    detail: "Email or form inquiry · Same-day response · No obligation",
   },
   {
     num: "02",
-    title: "Prescription",
-    desc: "Our licensed medical team reviews your profile and creates a personalized peptide protocol tailored to your unique biology and wellness objectives.",
-    detail: "Licensed providers · Personalized dosing · Medical oversight",
+    title: "Verify",
+    desc: "Review our certificates of analysis, purity documentation, and product specifications. We provide full transparency so you can verify quality before ordering.",
+    detail: "COA provided · HPLC data · Third-party testing results",
   },
   {
     num: "03",
-    title: "Delivery",
-    desc: "Your pharmaceutical-grade peptides are carefully prepared and shipped in temperature-controlled packaging directly to your door — discreetly and securely.",
-    detail: "Cold-chain shipping · Discreet packaging · Priority delivery",
+    title: "Order",
+    desc: "Place your research order with confidence. All purchasers must confirm they are 18+ and agree that products will be used solely for legitimate research purposes.",
+    detail: "18+ verification · Research-use agreement · Secure checkout",
   },
   {
     num: "04",
-    title: "Ongoing Support",
-    desc: "Your journey doesn't end at delivery. Our team provides continuous guidance, progress monitoring, and protocol adjustments to ensure optimal results.",
-    detail: "Regular check-ins · Protocol optimization · Dedicated support",
+    title: "Receive",
+    desc: "Your compounds are carefully prepared, packaged in temperature-controlled materials, and shipped discreetly to your laboratory or research facility.",
+    detail: "Cold-chain shipping · Discreet packaging · Priority delivery",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
     <>
       <Hero
         title="How It Works"
-        subtitle="A seamless journey from consultation to transformation. Four steps to optimized wellness."
+        subtitle="A seamless process from inquiry to delivery. Premium research compounds, simplified."
       />
 
       <section className="section-padding bg-white">
@@ -76,14 +76,15 @@ export default function HowItWorksPage() {
       <section className="section-padding bg-charcoal text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-light text-white">
-            Your Transformation Starts Here
+            Ready to Get Started?
           </h2>
           <p className="mt-4 text-white/50">
-            Join thousands who have chosen a more refined approach to wellness.
+            Contact our team to discuss your research needs and compound
+            availability.
           </p>
           <div className="mt-8">
             <Link href="/contact" className="btn-primary">
-              Begin Your Journey
+              Inquire Now
             </Link>
           </div>
         </div>

@@ -4,49 +4,49 @@ import Accordion from "@/components/Accordion";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Frequently asked questions about Core Wellness peptide therapy.",
+  description: "Frequently asked questions about Core Wellness research compounds.",
 };
 
 const faqs = [
   {
-    question: "What are peptides?",
-    answer: "Peptides are short chains of amino acids that act as signaling molecules in the body. They play crucial roles in numerous biological processes, including metabolism, immune function, and cellular communication. Our GLP-3 peptides are synthesized to pharmaceutical-grade standards for optimal purity and efficacy.",
+    question: "What are your products used for?",
+    answer: "All Core Wellness products are sold strictly for research purposes only. They are intended for in-vitro research, educational, and scientific applications. They are not intended for human consumption, veterinary use, or any diagnostic purposes.",
   },
   {
-    question: "Do I need a prescription?",
-    answer: "Yes. All Core Wellness peptide products require a valid prescription from a licensed healthcare provider. Our consultation process includes a comprehensive medical review to ensure safety and appropriateness for your individual health profile.",
+    question: "What products do you offer?",
+    answer: "We currently offer GLP-3 (10mg/ml injectable), GLP-2 (10mg/ml injectable), and Lipo in a Bottle (injectable compound). All products are research-grade and accompanied by certificates of analysis.",
   },
   {
-    question: "How do I get started?",
-    answer: "Simply schedule a complimentary consultation through our contact page. A wellness specialist will review your goals and health history, and if appropriate, connect you with a licensed provider for prescription and protocol design.",
+    question: "What is the purity of your compounds?",
+    answer: "Our peptide compounds are synthesized to ≥98% purity, verified by independent HPLC analysis. Each batch undergoes comprehensive third-party testing including mass spectrometry, endotoxin testing, and sterility verification.",
   },
   {
-    question: "Is peptide therapy safe?",
-    answer: "When prescribed and administered under medical supervision, peptide therapy has a well-established safety profile. Our protocols are designed by licensed healthcare providers and include ongoing monitoring. As with any medical intervention, individual responses may vary.",
+    question: "Do you provide certificates of analysis?",
+    answer: "Yes. Every order includes a full Certificate of Analysis (COA) with HPLC purity data, identity confirmation, and sterility results. Additional batch documentation is available upon request.",
   },
   {
-    question: "What results can I expect?",
-    answer: "Results vary based on individual biology, adherence to protocol, and lifestyle factors. Most clients begin to notice changes within 4-8 weeks. Your wellness specialist will set realistic expectations and monitor your progress throughout your journey.",
+    question: "How do I place an order?",
+    answer: "Contact our team via the inquiry form or email at hello@corewellness.com. We'll confirm availability, provide specifications, and process your order. All purchasers must confirm they are 18+ and agree to research-use-only terms.",
   },
   {
-    question: "How is the product shipped?",
-    answer: "All orders are shipped in temperature-controlled, insulated packaging to maintain product integrity. Shipping is discreet with no external branding. Priority shipping ensures your peptides arrive quickly and in optimal condition.",
+    question: "Is there an age requirement to purchase?",
+    answer: "Yes. All purchasers must be 18 years of age or older. Age verification is required at the time of purchase.",
   },
   {
-    question: "What is the cost?",
-    answer: "Pricing varies based on your personalized protocol. We believe in transparent, value-based pricing. Contact our team for detailed pricing information or schedule a consultation to discuss your options.",
+    question: "How are products shipped?",
+    answer: "All orders are shipped in temperature-controlled, insulated packaging to maintain compound integrity. Shipping is discreet with no external product branding. Priority shipping is available.",
   },
   {
-    question: "Can I cancel my subscription?",
-    answer: "Yes. Core Wellness operates on a flexible model. You can adjust, pause, or cancel your protocol at any time by contacting our support team. No long-term contracts required.",
+    question: "How should I store the products?",
+    answer: "Store unopened vials in a refrigerator at 2-8°C (36-46°F). Protect from light and avoid freezing. Specific storage guidelines are included with each product's COA documentation.",
   },
   {
-    question: "How do I store my peptides?",
-    answer: "Unopened vials should be refrigerated at 2-8°C (36-46°F). Once reconstituted, keep refrigerated and use within 28 days. Avoid freezing and protect from direct light. Detailed storage instructions are included with every order.",
+    question: "Do you ship internationally?",
+    answer: "Currently, Core Wellness ships within the United States. International availability is under development. Contact us for the latest shipping information.",
   },
   {
-    question: "Do you offer international shipping?",
-    answer: "Currently, Core Wellness ships within the United States. International availability is in development. Contact us for the latest shipping information and to join our international waitlist.",
+    question: "What is your return policy?",
+    answer: "Due to the nature of our products, we cannot accept returns on opened or temperature-compromised items. If there is an issue with your order, contact our team and we will work to resolve it promptly.",
   },
 ];
 
@@ -55,12 +55,16 @@ export default function FAQPage() {
     <>
       <Hero
         title="Frequently Asked"
-        subtitle="Everything you need to know about Core Wellness and peptide therapy."
+        subtitle="Everything you need to know about Core Wellness research compounds."
       />
 
       <section className="section-padding bg-white">
         <div className="max-w-3xl mx-auto">
           <Accordion items={faqs} />
+          <p className="text-xs text-charcoal/40 mt-12 text-center leading-relaxed">
+            All products are sold strictly for research purposes only. Not for
+            human consumption. Must be 18+ to purchase.
+          </p>
         </div>
       </section>
     </>

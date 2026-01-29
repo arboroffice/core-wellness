@@ -6,25 +6,25 @@ import DisclaimerBanner from "@/components/DisclaimerBanner";
 
 export const metadata: Metadata = {
   title: {
-    default: "Core Wellness | Luxury Peptide Wellness",
+    default: "Core Wellness | Premium Research Peptides",
     template: "%s | Core Wellness",
   },
   description:
-    "Redefine your wellness journey with Core Wellness. Premium GLP-3 peptides crafted for those who demand excellence.",
+    "Premium research-grade peptides and compounds. Pharmaceutical precision, third-party tested. For research purposes only.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://corewellness.com",
     siteName: "Core Wellness",
-    title: "Core Wellness | Luxury Peptide Wellness",
+    title: "Core Wellness | Premium Research Peptides",
     description:
-      "Redefine your wellness journey with Core Wellness. Premium GLP-3 peptides crafted for those who demand excellence.",
+      "Premium research-grade peptides and compounds. Pharmaceutical precision, third-party tested. For research purposes only.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Core Wellness | Luxury Peptide Wellness",
+    title: "Core Wellness | Premium Research Peptides",
     description:
-      "Redefine your wellness journey with Core Wellness. Premium GLP-3 peptides crafted for those who demand excellence.",
+      "Premium research-grade peptides and compounds. Pharmaceutical precision, third-party tested. For research purposes only.",
   },
 };
 

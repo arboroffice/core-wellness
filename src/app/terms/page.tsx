@@ -16,15 +16,15 @@ export default function TermsPage() {
             },
             {
               title: "Eligibility",
-              text: "You must be at least 18 years of age and located in a jurisdiction where our products and services are available. All products require a valid prescription from a licensed healthcare provider.",
+              text: "You must be at least 18 years of age to purchase from Core Wellness. By placing an order, you confirm you meet this requirement and that all products will be used strictly for research purposes only.",
             },
             {
-              title: "Products & Services",
-              text: "Core Wellness provides pharmaceutical-grade peptide products subject to medical consultation and prescription. Product availability, pricing, and formulations are subject to change. All purchases are subject to medical eligibility review.",
+              title: "Research Use Only",
+              text: "All products sold by Core Wellness are for research purposes only. They are not intended for human consumption, veterinary use, therapeutic use, or any diagnostic purpose. Buyers agree to use products solely for legitimate scientific, educational, or in-vitro research applications.",
             },
             {
-              title: "Medical Disclaimer",
-              text: "Core Wellness does not provide medical advice. Our products are provided under the supervision of licensed healthcare providers. Always consult your physician before starting any new wellness protocol.",
+              title: "Products & Availability",
+              text: "Core Wellness provides research-grade peptides and compounds. Product availability, specifications, and formulations are subject to change without notice. All orders are subject to availability confirmation.",
             },
             {
               title: "Intellectual Property",
@@ -32,7 +32,7 @@ export default function TermsPage() {
             },
             {
               title: "Limitation of Liability",
-              text: "Core Wellness shall not be liable for any indirect, incidental, or consequential damages arising from the use of our products or services. Our liability is limited to the amount paid for the specific product or service in question.",
+              text: "Core Wellness shall not be liable for any indirect, incidental, or consequential damages arising from the use or misuse of our products. Our total liability is limited to the amount paid for the specific product in question.",
             },
             {
               title: "Governing Law",

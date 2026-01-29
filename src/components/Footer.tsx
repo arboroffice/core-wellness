@@ -9,14 +9,16 @@ const footerLinks = {
   ],
   Products: [
     { href: "/products", label: "All Products" },
-    { href: "/products/glp-3", label: "GLP-3 5mg/ml" },
+    { href: "/products/glp-3", label: "GLP-3 10mg/ml" },
+    { href: "/products/glp-2", label: "GLP-2 10mg/ml" },
+    { href: "/products/lipo-in-a-bottle", label: "Lipo in a Bottle" },
+  ],
+  Resources: [
     { href: "/how-it-works", label: "How It Works" },
     { href: "/faq", label: "FAQ" },
-  ],
-  Legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },
-    { href: "/disclaimer", label: "Medical Disclaimer" },
+    { href: "/disclaimer", label: "Disclaimer" },
   ],
 };
 
@@ -34,8 +36,8 @@ export default function Footer() {
               CORE WELLNESS
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-white/50">
-              Premium peptide wellness for those who demand excellence. Science
-              meets luxury.
+              Premium research-grade peptides and compounds. Pharmaceutical
+              precision meets elevated design.
             </p>
             <div className="flex gap-4 mt-6">
               {["Instagram", "Twitter", "LinkedIn"].map((s) => (
@@ -72,15 +74,22 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} Core Wellness. All rights reserved.
+        {/* Research disclaimer */}
+        <div className="border-t border-white/10 mt-16 pt-8">
+          <p className="text-xs text-white/40 leading-relaxed text-center max-w-3xl mx-auto mb-4">
+            All products are sold strictly for research purposes only. Not for
+            human consumption. Must be 18+ to purchase. By ordering, you agree
+            that products will be used solely for in-vitro research,
+            educational, or scientific purposes.
           </p>
-          <p className="text-xs text-white/30 max-w-xl text-center md:text-right">
-            These statements have not been evaluated by the FDA. This product is
-            not intended to diagnose, treat, cure, or prevent any disease.
-            Consult your healthcare provider before use.
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-xs text-white/30">
+              © {new Date().getFullYear()} Core Wellness. All rights reserved.
+            </p>
+            <p className="text-xs text-white/30">
+              For research purposes only · Not for human consumption
+            </p>
+          </div>
         </div>
       </div>
     </footer>
