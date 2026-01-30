@@ -80,8 +80,8 @@ export default function GLP3Page() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="btn-primary text-center">
-                  Inquire for Availability
+                <Link href="/checkout?product=glp-3" className="btn-primary text-center">
+                  Buy Now — $149
                 </Link>
                 <Link href="/science" className="btn-outline text-center">
                   View Research

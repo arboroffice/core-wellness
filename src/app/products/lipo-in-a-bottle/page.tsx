@@ -75,8 +75,8 @@ export default function LipoPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="btn-primary text-center">
-                  Inquire for Availability
+                <Link href="/checkout?product=lipo-in-a-bottle" className="btn-primary text-center">
+                  Buy Now — $99
                 </Link>
                 <Link href="/science" className="btn-outline text-center">
                   View Research
