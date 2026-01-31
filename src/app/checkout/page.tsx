@@ -3,8 +3,8 @@
 import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import Link from "next/link";
-import { PRODUCTS } from "@/lib/conduit-config";
-import { CryptoPayButton } from "@/components/ConduitCheckout";
+import { PRODUCTS } from "@/lib/pepai-config";
+import { PepaiPayButton } from "@/components/PepaiCheckout";
 
 function CheckoutContent() {
   const params = useSearchParams();
@@ -96,9 +96,9 @@ function CheckoutContent() {
         <div className="bg-white p-6">
           <p className="text-xs tracking-[0.2em] uppercase text-gold mb-4">Payment</p>
           <p className="text-sm text-charcoal/60 mb-6">
-            Pay securely with USDC or USDT stablecoin. Your order will be confirmed instantly upon payment verification.
+            Pay securely with USDC. Your payment is held in escrow until order is confirmed.
           </p>
-          <CryptoPayButton
+          <PepaiPayButton
             amount={product.price}
             description={`${product.name} - Core Wellness`}
             productId={productId}
