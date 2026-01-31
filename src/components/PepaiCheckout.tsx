@@ -62,7 +62,7 @@ export function PepaiPayButton({
       </div>
 
       <p className="text-xs text-charcoal/40 mt-3 text-center">
-        🔒 Secure escrow payment · Powered by Pepᵃⁱ
+        🔒 Secure escrow payment · Powered by PepAI
       </p>
 
       {/* Success modal */}
