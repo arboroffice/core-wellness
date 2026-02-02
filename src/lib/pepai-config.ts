@@ -1,6 +1,6 @@
 export const PEPAI_CONFIG = {
-  sellerAddress: '0x742d35Cc6634C0532925a3b844Bc9e7595f2bD78', // TODO: Replace with Core Wellness wallet
-  baseUrl: 'https://peptidepay-app.vercel.app',
+  sellerAddress: '0x43ecd1d4f1ea78e82e9df661b68f2bcc7bcb5373',
+  baseUrl: 'https://peppayai.com',
   expiryDays: 7,
 };
 
