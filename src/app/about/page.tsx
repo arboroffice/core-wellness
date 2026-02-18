@@ -88,9 +88,6 @@ export default function AboutPage() {
 
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-            Leadership
-          </p>
           <h2 className="font-serif text-3xl md:text-4xl font-light">
             Meet The Team
           </h2>
