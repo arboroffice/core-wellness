@@ -96,7 +96,7 @@ function CheckoutContent() {
         <div className="bg-white p-6">
           <p className="text-xs tracking-[0.2em] uppercase text-gold mb-4">Payment</p>
           <p className="text-sm text-charcoal/60 mb-6">
-            Pay securely with USDC. Your payment is held in escrow until order is confirmed.
+            Pay securely with crypto. Your payment is confirmed instantly on-chain.
           </p>
           <PepaiPayButton
             amount={product.price}

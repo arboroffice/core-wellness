@@ -49,7 +49,7 @@ export default function GLP3Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-square bg-white flex items-center justify-center overflow-hidden">
               <img
-                src="/images/vial-single.jpg"
+                src="/images/glp-3.png"
                 alt="GLP-3 10mg/ml Research Peptide"
                 className="w-full h-full object-cover"
               />

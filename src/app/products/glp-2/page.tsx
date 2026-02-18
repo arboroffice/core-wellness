@@ -48,7 +48,7 @@ export default function GLP2Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-square bg-white flex items-center justify-center overflow-hidden">
               <img
-                src="/images/packaging-flatlay.jpg"
+                src="/images/glp-2.png"
                 alt="GLP-2 10mg/ml Research Peptide"
                 className="w-full h-full object-cover"
               />

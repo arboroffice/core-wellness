@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             },
             {
               title: "Your Rights",
-              text: "You have the right to access, correct, or delete your personal information. You may opt out of marketing communications at any time. To exercise these rights, contact us at hello@corewellness.com.",
+              text: "You have the right to access, correct, or delete your personal information. You may opt out of marketing communications at any time. To exercise these rights, please contact us.",
             },
             {
               title: "Cookies",
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
             },
             {
               title: "Contact",
-              text: "For privacy-related inquiries, contact us at hello@corewellness.com or write to Core Wellness, Privacy Department.",
+              text: "For privacy-related inquiries, please contact us or write to Core Wellness, Privacy Department.",
             },
           ].map((s) => (
             <div key={s.title} className="mb-10">

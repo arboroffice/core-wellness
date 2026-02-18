@@ -40,32 +40,47 @@ const testimonials = [
   },
 ];
 
-const press = ["Vogue", "Forbes", "Elle", "GQ", "Byrdie"];
-
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center text-center bg-cream">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
+      {/* Hero */}
+      <section className="relative min-h-screen flex items-center justify-center text-center bg-cream overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl animate-pulse-slow pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-gold/10 rounded-full blur-3xl animate-float pointer-events-none" style={{ animationDelay: "1s" }} />
+
         <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <p className="text-xs tracking-[0.3em] uppercase text-gold mb-6">
+          <p
+            className="text-xs tracking-[0.3em] uppercase text-gold mb-6 opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
+          >
             Premium Research Peptides
           </p>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-tight leading-[1.1]">
+          <h1
+            className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-tight leading-[1.1] opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+          >
             Redefine Your
             <br />
             <em className="italic">Research</em>
           </h1>
-          <p className="mt-8 text-base md:text-lg text-charcoal/60 font-light leading-relaxed max-w-lg mx-auto">
+          <p
+            className="mt-8 text-base md:text-lg text-charcoal/60 font-light leading-relaxed max-w-lg mx-auto opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+          >
             Premium research-grade peptides and compounds, crafted with
             pharmaceutical precision for those who demand excellence.
           </p>
-          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/products" className="btn-primary">
+          <div
+            className="mt-12 flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up"
+            style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
+          >
+            <Link href="/products" className="btn-primary transform hover:scale-105 transition-transform duration-300">
               Explore Compounds
             </Link>
-            <Link href="/how-it-works" className="btn-outline">
+            <Link href="/how-it-works" className="btn-outline transform hover:scale-105 transition-transform duration-300">
               How It Works
             </Link>
           </div>
@@ -108,20 +123,21 @@ export default function Home() {
               subtitle="10mg/ml · Injectable"
               price="Inquire for Availability"
               href="/products/glp-3"
-              image="/images/vial-single.jpg"
+              image="/images/glp-3.png"
             />
             <ProductCard
               name="GLP-2"
               subtitle="10mg/ml · Injectable"
               price="Inquire for Availability"
               href="/products/glp-2"
-              image="/images/packaging-flatlay.jpg"
+              image="/images/glp-2.png"
             />
             <ProductCard
               name="Lipo in a Bottle"
               subtitle="Injectable Compound"
               price="Inquire for Availability"
               href="/products/lipo-in-a-bottle"
+              image="/images/lipo-in-a-bottle.png"
             />
           </div>
           <p className="text-center text-xs text-charcoal/40 mt-8 tracking-wide">
@@ -181,25 +197,6 @@ export default function Home() {
                 <p className="font-serif text-sm">{t.name}</p>
                 <p className="text-xs text-charcoal/40 mt-1">{t.title}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* As Seen In */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs tracking-[0.3em] uppercase text-charcoal/30 mb-8">
-            As Seen In
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            {press.map((p) => (
-              <span
-                key={p}
-                className="font-serif text-2xl text-charcoal/15 tracking-wider"
-              >
-                {p}
-              </span>
             ))}
           </div>
         </div>

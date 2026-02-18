@@ -39,17 +39,7 @@ export default function Footer() {
               Premium research-grade peptides and compounds. Pharmaceutical
               precision meets elevated design.
             </p>
-            <div className="flex gap-4 mt-6">
-              {["Instagram", "Twitter", "LinkedIn"].map((s) => (
-                <a
-                  key={s}
-                  href="#"
-                  className="text-xs tracking-wider uppercase text-white/40 hover:text-gold transition-colors"
-                >
-                  {s}
-                </a>
-              ))}
-            </div>
+
           </div>
 
           {/* Links */}

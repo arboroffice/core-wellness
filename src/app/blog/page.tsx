@@ -15,6 +15,7 @@ const posts = [
       "An overview of GLP-3 peptides — their structure, known biological roles, and why they are a growing focus of scientific investigation.",
     date: "January 15, 2025",
     category: "Education",
+    image: "/images/glp-3.png",
   },
   {
     slug: "peptides-in-research",
@@ -23,6 +24,7 @@ const posts = [
       "Understanding the role of synthetic peptides in laboratory research — from metabolic studies to cellular signaling investigations.",
     date: "January 8, 2025",
     category: "Research",
+    image: "/images/glp-2.png",
   },
   {
     slug: "quality-standards",
@@ -31,6 +33,7 @@ const posts = [
       "How we ensure pharmaceutical-grade purity, from cGMP synthesis to independent third-party testing and full COA documentation.",
     date: "January 1, 2025",
     category: "Quality",
+    image: "/images/lipo-in-a-bottle.png",
   },
 ];
 
@@ -52,8 +55,16 @@ export default function BlogPage() {
                 className="group block"
               >
                 <div className="card-glass overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-gold/10">
-                  <div className="aspect-[4/3] bg-cream-dark flex items-center justify-center">
-                    <span className="font-serif text-4xl text-gold/20">CW</span>
+                  <div className="aspect-[4/3] bg-cream-dark flex items-center justify-center overflow-hidden">
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    ) : (
+                      <span className="font-serif text-4xl text-gold/20">CW</span>
+                    )}
                   </div>
                   <div className="p-6">
                     <p className="text-xs tracking-[0.15em] uppercase text-gold mb-2">

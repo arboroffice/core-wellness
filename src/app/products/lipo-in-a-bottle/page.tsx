@@ -46,8 +46,12 @@ export default function LipoPage() {
       <section className="pt-28 pb-20 bg-cream">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="aspect-square bg-white flex items-center justify-center">
-              <span className="font-serif text-8xl text-gold/20">CW</span>
+            <div className="aspect-square bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src="/images/lipo-in-a-bottle.png"
+                alt="Lipo in a Bottle Research Compound"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             <div>
