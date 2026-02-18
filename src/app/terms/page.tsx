@@ -40,7 +40,7 @@ export default function TermsPage() {
             },
             {
               title: "Contact",
-              text: "For questions about these terms, contact us at hello@corewellness.com.",
+              text: "For questions about these terms, please contact us.",
             },
           ].map((s) => (
             <div key={s.title} className="mb-10">

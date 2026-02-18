@@ -35,8 +35,6 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 {[
-                  { label: "Email", value: "hello@corewellness.com" },
-                  { label: "Phone", value: "(555) 000-0000" },
                   { label: "Hours", value: "Mon–Fri, 9am–6pm CST" },
                 ].map((c) => (
                   <div key={c.label}>

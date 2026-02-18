@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "How do I place an order?",
-    answer: "Contact our team via the inquiry form or email at hello@corewellness.com. We'll confirm availability, provide specifications, and process your order. All purchasers must confirm they are 18+ and agree to research-use-only terms.",
+    answer: "Contact our team via the inquiry form. We'll confirm availability, provide specifications, and process your order. All purchasers must confirm they are 18+ and agree to research-use-only terms.",
   },
   {
     question: "Is there an age requirement to purchase?",

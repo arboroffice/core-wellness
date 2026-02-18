@@ -15,20 +15,21 @@ const products = [
     subtitle: "10mg/ml · Injectable",
     price: "Inquire for Availability",
     href: "/products/glp-3",
-    image: "/images/vial-single.jpg",
+    image: "/images/glp-3.png",
   },
   {
     name: "GLP-2",
     subtitle: "10mg/ml · Injectable",
     price: "Inquire for Availability",
     href: "/products/glp-2",
-    image: "/images/packaging-flatlay.jpg",
+    image: "/images/glp-2.png",
   },
   {
     name: "Lipo in a Bottle",
     subtitle: "Injectable Compound",
     price: "Inquire for Availability",
     href: "/products/lipo-in-a-bottle",
+    image: "/images/lipo-in-a-bottle.png",
   },
 ];
 

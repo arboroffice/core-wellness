@@ -1,5 +1,5 @@
 export const PEPAI_CONFIG = {
-  sellerAddress: '0x43ecd1d4f1ea78e82e9df661b68f2bcc7bcb5373',
+  sellerAddress: '0xea86484c5ab0d4eb02f1dbc45ea6bbe83f9bf57a',
   baseUrl: 'https://peppayai.com',
   expiryDays: 7,
 };

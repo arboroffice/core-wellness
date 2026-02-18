@@ -44,8 +44,12 @@ export default function AboutPage() {
                 of analysis. This is research supply, elevated.
               </p>
             </div>
-            <div className="aspect-[3/4] bg-cream-dark flex items-center justify-center">
-              <span className="font-serif text-8xl text-gold/20">CW</span>
+            <div className="aspect-[3/4] bg-cream-dark flex items-center justify-center overflow-hidden">
+              <img
+                src="/images/glp-2.png"
+                alt="Core Wellness Laboratory"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -82,29 +86,6 @@ export default function AboutPage() {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-light">
-            Meet The Team
-          </h2>
-          <div className="gold-divider" />
-          <div className="max-w-sm mx-auto mt-8">
-            <div className="aspect-square bg-cream-dark rounded-full w-48 h-48 mx-auto flex items-center justify-center mb-6">
-              <span className="font-serif text-4xl text-gold/30">M</span>
-            </div>
-            <h3 className="font-serif text-xl">Mia</h3>
-            <p className="text-sm text-gold tracking-wider uppercase mt-1">
-              Founder & CEO
-            </p>
-            <p className="text-sm text-charcoal/60 mt-4 leading-relaxed">
-              Driven by a commitment to quality and transparency, Mia founded
-              Core Wellness to bring pharmaceutical-grade precision to the
-              research compound market — with an aesthetic standard to match.
-            </p>
           </div>
         </div>
       </section>

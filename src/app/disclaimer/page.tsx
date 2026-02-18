@@ -60,11 +60,7 @@ export default function DisclaimerPage() {
             <p className="text-xs text-charcoal/50 leading-relaxed text-center mt-4">
               By using this website or purchasing from Core Wellness, you
               acknowledge that you have read, understood, and agree to this
-              disclaimer. For questions, contact{" "}
-              <a href="mailto:hello@corewellness.com" className="text-gold">
-                hello@corewellness.com
-              </a>
-              .
+              disclaimer. For questions, please contact us.
             </p>
           </div>
         </div>

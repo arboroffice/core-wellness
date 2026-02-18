@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PEPAI_CONFIG } from "@/lib/pepai-config";
+import Script from "next/script";
 
 interface PepaiPayButtonProps {
   amount: number;
@@ -9,6 +10,18 @@ interface PepaiPayButtonProps {
   productId: string;
   email?: string;
   onSuccess?: () => void;
+}
+
+declare global {
+  interface Window {
+    PepPayAI: {
+      open: (config: {
+        amount: string;
+        description: string;
+        seller: string;
+      }) => void;
+    };
+  }
 }
 
 export function PepaiPayButton({
@@ -19,45 +32,41 @@ export function PepaiPayButton({
 }: PepaiPayButtonProps) {
   const [showConfirm, setShowConfirm] = useState(false);
 
-  const pay = () => {
-    // Build the checkout URL
-    const params = new URLSearchParams({
-      amount: amount.toFixed(2),
-      desc: description,
-      seller: PEPAI_CONFIG.sellerAddress,
-      expiry: PEPAI_CONFIG.expiryDays.toString(),
-    });
-    
-    const checkoutUrl = `${PEPAI_CONFIG.baseUrl}/checkout/new?${params.toString()}`;
-    
-    // Open in popup
-    const popup = window.open(
-      checkoutUrl,
-      "pepai-checkout",
-      "width=480,height=720,scrollbars=yes"
-    );
-
-    // Listen for completion message
-    const handleMessage = (event: MessageEvent) => {
-      if (event.origin !== PEPAI_CONFIG.baseUrl) return;
-      if (event.data?.event === "payment_complete") {
-        popup?.close();
-        setShowConfirm(true);
-        onSuccess?.();
-        window.removeEventListener("message", handleMessage);
-      }
+  useEffect(() => {
+    const handlePaymentComplete = (e: any) => {
+      console.log("Payment complete!", e.detail);
+      setShowConfirm(true);
+      onSuccess?.();
     };
-    window.addEventListener("message", handleMessage);
+
+    document.addEventListener("peppayai:complete", handlePaymentComplete);
+    return () => {
+      document.removeEventListener("peppayai:complete", handlePaymentComplete);
+    };
+  }, [onSuccess]);
+
+  const pay = () => {
+    if (window.PepPayAI) {
+      window.PepPayAI.open({
+        amount: amount.toFixed(2),
+        description: description,
+        seller: PEPAI_CONFIG.sellerAddress,
+      });
+    } else {
+      console.error("PepPayAI widget not loaded");
+    }
   };
 
   return (
     <>
+      <Script src="https://peppayai.com/widget.js" strategy="lazyOnload" />
+      
       <div className="flex flex-col gap-3">
         <button
           onClick={pay}
           className="w-full py-4 px-6 bg-gold text-white font-sans text-sm tracking-widest uppercase transition-all duration-300 hover:bg-gold-dark"
         >
-          Pay ${amount.toFixed(2)} USDC
+          Pay ${amount.toFixed(2)}
         </button>
       </div>
 
